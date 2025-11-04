@@ -19,7 +19,10 @@ public class Task9 {
 
         Prime check=(x -> {
             boolean state = false;
-            for (int i = 2; i < x; i++) {
+            if (x==2){
+                return true;
+            }
+            for (int i = 1; i < x; i++) {
                 if (x%i==0){
                     state=false;
                     break;
